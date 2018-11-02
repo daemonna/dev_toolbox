@@ -5,6 +5,9 @@ alias gitupall='ls | xargs -I{} git -C {} pull'  #git pull all repos in current 
 alias gitgraph="git log --graph --oneline --all --decorate --topo-order"
 alias gitlistrepos="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(cd {} && git config --get remote.origin.url)' \;"
 
+#git lfs install
+#git lfs track "*.iso" #or any extension you want to track
+#git add .gitattributes
 
 
 
