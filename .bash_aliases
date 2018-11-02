@@ -30,7 +30,30 @@ alias gitgraph="git log --graph --oneline --all --decorate --topo-order"
 alias gitlistrepos="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(cd {} && git config --get remote.origin.url)' \;"
 
 
+
+
+if [ -f ~/.docker_aliases ]; then
+    . ~/.docker_aliases
+fi
+
+# TODO: move to docker_aliases
+
 # DOCKER
+
+# drm stands for "docker remove"
+alias drm="docker container prune -f"
+
+# dri stands for "docker remove image"
+alias dri="docker image prune -f"
+
+# dki stands for "docker interactive"
+alias dki="docker run -itP"
+
+# dke stands for "docker exec"
+alias dke="docker exec -it"
+
+
+
 
 # Get latest container ID
 alias dl="docker ps -l -q"
