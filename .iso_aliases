@@ -1,0 +1,3 @@
+#!/bin/bash
+
+alias down_centos_atomic='wget http://cloud.centos.org/centos/7/atomic/images/CentOS-Atomic-Host-7-Installer.iso -o CentOS-Atomic-Host-7-Installer.iso'
